@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    .flag{
+        width: 900px;
+        height: 600px;
+        background-color: blue;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    .flag>div{
+        width: 900px;
+        height: 150px;
+        background-color: yellow;
+        position: relative;
+        left: 0px;
+        top: 225px;
+    }
+    .flag>div>div{
+        width: 150px;
+        height: 600px;
+        background-color: yellow;
+        position: relative;
+        left: 225px;
+        top: -225px;
+    }
+    .flag>div>div>div{
+        width: 900px;
+        height: 50px;
+        background-color: red;
+        position: relative;
+        left: -225px;
+        top: 275px;
+    }
+    .flag>div>div>div>div{
+        width: 50px;
+        height: 600px;
+        background-color: red;
+        position: relative;
+        left: 275px;
+        top: -275px;
+    }
+    .flag p {
+    position: absolute;
+    top: 10px; /* Adjust to position the text */
+    left: 500px; /* Adjust to position the text */
+    font-size: 100px;
+    color: black; /* Text color that contrasts with the flag */
+    z-index: 1; /* Ensures text is above the flag elements */
+    }
+    .flag>div p {
+    position: absolute;
+    top: 50px; /* Adjust to position the text */
+    left: 500px; /* Adjust to position the text */
+    font-size: 100px;
+    color: black; /* Text color that contrasts with the flag */
+    z-index: 1; /* Ensures text is above the flag elements */
+    }
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="flag">
+    <p>Aland</p>
+    <div>
+        <p>Islands</p>
+      <div>
+        <div>
+            <div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
